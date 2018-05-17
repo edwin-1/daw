@@ -8,7 +8,7 @@ body{
     font-family: 'Helvetica','Verdana','Monaco',sans-serif;;
     font-size:12px;
     background-image:
-    url(http://www.wisphysics.es/wp-content/uploads/2010/01/polifemo-desde-pandora-avatar.jpg) no-repeat bottom center;
+    url("https://www.turismoasturias.es/documents/11022/544215/LagoEnol.jpg/8c6136c8-4024-488a-aa34-9ad4066dd96f?t=1409232581560");
     background-size: cover;
     background-position: right-top;
 
@@ -16,15 +16,14 @@ body{
 .contenedor{
       width: 80%;
       margin: 0 auto;
-      background-color: #ff0000;
+      background-color: #008080;
       border-radius: 20px;
       color: #ffffff;
 }
 header{
   padding: 20px 10px;
   margin: 10px;
-  background:
-  url(https://futurism.com/wp-content/uploads/2013/02/529577_417094855043596_1653388552_n.jpg) no-repeat bottom center;
+  background: url("122481134491021")no-repeat;
   height: 100px;
   background-size: 200px;
 }
@@ -32,30 +31,35 @@ header h1, header h2, header h3{
   margin: 0;
   padding: 0;
   text-align: center;
+  color: #808080;
+}
+section h2, section h2, section h2{
+  color:#c0c0c0;
+  font:oblique bold 120% cursive;
 }
 .contenedor section{
-  margin: 20px;
+  margin: 10px;
 }
 section{
   float: left;
   width: 47.88%;
 }
 section h2{
-  background: #008bb0;
+  background: #800000;
   text-transform: uppercase;
 
 }
 # imagenes img{
   width: 20%;
   display: inline-block;
-  padding; 10px;
-  background: 00780047;
+  padding: 10px 20px;
+  background: #008080;
   margin: 20px;
 }
-# imagenes img:hover{
-  padding:20px;
-  margin: 20px;
-  width: 10%;
+# imagenes img{
+  padding:5px;
+  margin: 5px;
+  width: 5%;
 }
 .clear{
   clear: both;
