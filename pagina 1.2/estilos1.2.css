@@ -1,0 +1,53 @@
+header{
+			padding: 20px 10px;
+			margin: 10px;
+			background: url("https://www.milideas.net/wp-content/uploads/combinar-color-naranja.jpg")no-repeat;
+			height: 100px;
+			background-size: 1500px; 
+		}
+		h3{
+			color: #ffa500;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		body{
+			margin: 10px;
+			padding: 10px;
+			font-style: arial;
+			font-weight: blue;
+			font-size: 15px;
+			font-color: #ff66ff;
+			font-family: "heveltica", "verdana", "monaco", sans-serif;
+			background-image: url("http://significadosdelossuenos.net/wp-content/uploads/2016/10/so%C3%B1ar-con-cafe.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+		.contenedor{
+			width: 70%;
+			margin: 1 auto;
+			background-color: #ff66ff;
+			border-radius: 20px;
+			color: #ffffff;
+		}
+	    section{
+	    	color:#0c0c0c;
+	    	font:oblique bold 100% cursive;
+	    }
+	    .izquierda{
+	    	float: left;
+	    	width: 150px;
+	    	border:1px solid black;
+	    	top:50px;
+	    }
+	    .derecha{
+	    	float: right;
+	    	width: 200px;
+	    	margin-top: 50px;
+	    }
+	    .centro{
+	    	margin: auto;
+	    	margin-top: 50px;
+	    	width: 960px;
+	    	height: 800px;
+	    }

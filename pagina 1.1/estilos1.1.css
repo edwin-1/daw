@@ -1,0 +1,53 @@
+h1, h2 {
+    color: #008080;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  header{
+    padding: 20px 10px;
+    margin: 10px;
+    background: url("https://static.slickdealscdn.com/attachment/6/0/1/0/8/7/2/4191423.attach")no-repeat;
+    height: 100px;
+    background-size: 1500px;
+  }
+  body{
+    margin: 10px;
+    padding: 10px;
+    font-style: arial;
+    font-weight: white;
+    font-size: 14px;
+    font-color:#ff0000;
+    font-family: "helvetica", "verdana", "monaco", sans-serif;
+    background-image: url("http://ksassets.timeincuk.net/wp/uploads/sites/54/2017/11/Halo-5-920x518.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .contenedor{
+    width: 80%;
+    margin: 1 auto;
+    background-color: #008080;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  section{
+    color: #0c0c0c;
+    font:oblique bold 100% cursive;
+  }
+  h3{
+    margin: 1px;
+    padding: 10px 20px;
+
+  }
+  p{
+    margin: 2px;
+    padding: 10px 20px;
+  }
+  article{
+    margin: 2px;
+    padding: 10px 20px;
+  }
+  table{
+    margin: 2px;
+    padding: 10px 20px;
+  }
