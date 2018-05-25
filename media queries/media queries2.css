@@ -1,0 +1,84 @@
+/*aqui van los estilos generales del sitio*/{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:#117722;
+}
+.contenedor{
+	width: 1024px;
+	margin: 0 auto;
+	background: #fff;
+}
+header{
+	width: 100%;
+}
+header .logo{
+	width: 15%;
+    padding: 5%;
+    background: #CD8B99;
+    float:left;
+}
+header .logo img{
+	width: 90%;
+	margin: 5%;
+}
+header .menu{
+	float: right;
+	width: 70%;
+	text-align: right;
+}
+header .menu::after{
+	clear:both;
+}
+header .menu nav a{
+	display: inline-block;
+	margin-right: 1%;
+	padding: 10px 20px;
+	background: #28A8C1;
+	border-radius: 20px;
+	text-decoration: none;
+	cursor: help;
+	color: #fff;
+	font-weight: bold;
+}
+span::before{
+	content: "estado inicial";
+}
+@media only screen and (max-width: 1024px){
+	body{
+		background-color: #8a3300;
+	}
+	span::before{
+		content: "diseño para pantallas pequeña";
+	}
+	/*aqui van los estilos para ¡pad horizontal*/
+}
+/*aqui van los estilos para tabletas*/
+@media only screen and (max-width: 768px){
+	body{
+		background-color: #ffffff;
+	}
+	span::before{
+		content: "bb edwin";
+	}
+
+}
+/*aqui van los estilos para mobiles horizontal*/
+@media only screen and (max-width: 480px){
+	body{
+		background-color: #108080;
+	}
+	header .logo{
+		float: none;
+		width: 100%
+		display:block;
+	}
+	header .logo svg{
+		display: none;
+	}
+	header .logo span{
+		font-weight: bold;
+		font-size: 17px;
+	}
+}

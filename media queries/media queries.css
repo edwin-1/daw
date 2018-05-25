@@ -1,0 +1,39 @@
+/*aqui van los estilos generales del sitio*/{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:#117722;
+}
+span::before{
+	content: "estado inicial";
+}
+@media only screen and (max-width: 1024px){
+	body{
+		background-color: #8a3300;
+	}
+	span::before{
+		content: "diseño para pantallas pequeña";
+	}
+	/*aqui van los estilos para ¡pad horizontal*/
+}
+/*aqui van los estilos para tabletas*/
+@media only screen and (max-width: 768px){
+	body{
+		background-color: #ffffff;
+	}
+	span::before{
+		content: "bb edwin";
+	}
+
+}
+/*aqui van los estilos para mobiles horizontal*/
+@media only screen and (max-width: 480px){
+	body{
+		background-color: #108080;
+	}
+	span::before{
+		content: "que onda edwin";
+	}
+}
+
