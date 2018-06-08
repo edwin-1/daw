@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practica 1.1</title>
+	<meta charset="utf-8">
+</head>
+<script type="text/javascript">
+	var cadena;
+	cadena = prompt("escriba un texto");
+	cadena = cadena.toUpperCase();
+	console.log(cadena);
+
+	var cadena2;
+	cadena2 = prompt("escribe un texto");
+	cadena2 = cadena2.toLowerCase();
+	console.log(cadena2);
+
+	var caracter;
+	caracter = prompt("escriba la palabra");
+	var numdecaracter = caracter.length;
+	console.log(numdecaracter); 
+
+	var can1;
+	can1 = prompt("escribe una palabra");
+	var can2;
+	can2 = prompt("escribe otra palabra");
+	var res =can1.concat(can2);
+	console.log(res);
+
+	var pal1;
+	pal1 = prompt("escribe la palabre");
+	var pal2;
+	pal2 = prompt("escribe la posicion");
+	var res3 = pal1.charAt(pal2);
+	console.log(res3);
+
+	var pal3;
+	pal3 = prompt("escriba una frase ");
+	var src;
+	src = prompt("escriba una palabra de la frase");
+	var posicion = pal3.indexOf(src);
+	console.log(posicion);
+
+	var ss;
+	ss = prompt("escribe una palabra o oracion");
+	var cc;
+	cc = prompt("escribe una letra de la palabra o oracion");
+	var anw = ss.lastIndexOf(cc);
+	console.log(anw); 
+
+	var pritext;
+	pritext = prompt("escribe un texto");
+	var sectext;
+	sectext = parseInt(prompt("escribe un numero"));
+	var bbn = pritext.substring(sectext);
+	console.log(bbn);
+
+	var x = "j,k,i,t";
+	var y = x.split(",");
+    console.log(y[0]);
+</script>
+<body>
+
+</body>
+</html>
