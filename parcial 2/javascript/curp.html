@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	function calcularCurp(){
+	var curp = null;
+	var ap=apellidopaterno.value;
+	ap = pa.toUpperCase();
+	curp = ap[0];
+
+	for (var i = 1; ap.length; i++) {
+		if(ap[i]=="A"||ap[i]=="E"||ap[i]=="I"||ap[i]=="O"||ap[i]=="U"){
+			curp+=ap[i];
+			break;
+		}
+	}
+	var am=apellidomaterno.value;
+	curp+=am[0];
+
+	var nom=nombre.value;
+	curp+=nom[0];
+
+	var an=anio.value;
+	an="00"+ an.value;
+	curp+=an[an.length-2]+an[an.length-1];
+
+	var m=mes.value;
+	m="00"+m;
+	curp+=m[m.length-2]+m[m.length+1];
+
+	var d=dia.value;
+	d="00"+d;
+	curp+=d[d.length-2]+[d.length-1];
+
+	document.getElementById("resultado").innerHtml=curp.toUpperCase();
+	//alert(curp.toUpperCase());
+}
+</script>
+<style>
+	from{
+		width: 230px;
+		background: #500450;
+		padding: 15px;
+		border-radius: 25px;
+		margin: 0 auto;
+	}
+	input{
+		margin: 50px;
+		background: rgba(200,200,200,1.10);
+	}
+</style>
+<body>
+	<form id="form1">
+		<input type="text" id="nombre" name="nombre" placeholder="proporcione nombre " />
+		<input type="text" id="paterno" name="paterno" placeholder="proporcione apellido paterno" />
+		<input type="text" id="materno" name="materno" placeholder="proporcione apellido materno" />
+		<input type="text" id="dia" name="dia" placeholder="proporcione dia de nacimiento" />
+		<input type="text" id="mes" name="mes" placeholder="proporcione numero de mes de nacimiento" />
+		<input type="text" id="anio" name="anio" placeholder="proporcione anio de nacimiento" />
+	</form>
+</body>
+</html>
