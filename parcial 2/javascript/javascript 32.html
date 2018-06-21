@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ejemplo onresize</title>
+	<meta charset="utf-8">
+</head>
+<script type="text/javascript">
+	var escala=0;
+	function medidas(){
+		var alto = document.body.offsetHeight;
+		var ancho = document.body.clientWidth;
+		var total=0;
+		document.getElementById("tam").innerHTML="<b>alto:</b> "+alto"<br><b>ancho:</b>"+ancho;
+
+		total= escala*ancho;
+		if (total>254) {
+    		total=254;
+    	}
+    	document.getElementById("escala").innerHTML="<b>"+(total)+"</br>";
+    	document.getElementByTadName("body")[0].style.background-color="rgb("+total+","+total+","+total+")";
+	}
+    function calcular(){
+    	escala=254/document.body.clientWidth;
+    } 
+</script>
+<body onresize="medidas();" onload="calcular();" style="background-color: rgb(25,108,47);">
+<div id="tam">
+	<div id="escala"></div>
+</div> 
+
+</body>
+</html>
