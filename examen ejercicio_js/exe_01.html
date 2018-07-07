@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>examen</title>
+	<meta charset="utf-8">
+	<meta name="edwin" content="examen">
+	<meta name="1702239" content="1702239">
+	<meta name="multimedia" content="TI32">
+</head>
+<style type="text/css">
+	body{
+		font-family:Helvetica, Arial, Sans-Serif;
+	}
+	.listado{
+		color:#ff0000; 
+	}
+	img{
+		background-size: cover;
+        border-radius: 6px;
+        float: left;
+        opacity: .6;
+        width: 200px;
+        height: 200px;
+       -webkit-transition:all .6s ease;
+}
+  img:hover{
+  opacity: 1;
+  border-radius: 200px;
+  box-shadow: 0px 0px 20px #ddd;
+}
+</style>
+<body>
+	<button onclick="agregar()">nombre</button>
+	<button onclick="agregar2()">pasatiempos</button>
+	<button onclick="agregar3()">ciudad</button>
+	<ul>
+		<div class="listado">
+		<li >name: <span id="nombre"></span></li>
+		<li>favourite: <span id="pasatiempos"></span></li>
+		<li>hometown: <span id="ciudad"></span></li>
+	</ul>
+    </div>
+</body>
+<script type="text/javascript">
+    function agregar() {
+        var cont1 = document.getElementById("nombre");
+        cont1.innerHTML= "edwin tzuc poot"; 
+    }
+    function agregar2(){
+        var cont2 = document.getElementById("pasatiempos");
+        cont2.innerHTML = "entrenar artes marciales";
+    }
+    function agregar3(){
+        var cont3 = document.getElementById("ciudad");
+        cont3.innerHTML = "playa del carmen";
+    }
+
+</script>
+</html>

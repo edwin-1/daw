@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>examen</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>mi lista de libros</h1>
+  <script type="text/javascript">
+    var libros = [
+  {title: 'El diseño de EveryDay Things',
+   img: 'http://ecx.images-amazon.com/images/I/41j2ODGkJDL._AA115_.jpg',
+   autor: 'Don Norman',
+   alreadyRead: false
+  },
+  {título: 'El humano más humano',
+   img: 'http://ecx.images-amazon.com/images/I/41Z56GwEv9L._AA115_.jpg',
+   autor: 'Brian Christian',
+   alreadyRead: true
+  }];
+    
+var libroList = document.createElement('ul');
+for (var i = 0; i <libros.length; i ++) {
+  var libroElem = document.createElement('li');
+  var libroImg = document.createElement('img');
+  libroImg.src = libros[i].img;
+  libroElem.appendChild(libroImg);
+  var libroDesc = document.createTextNode (libros[i].title + ' por ' + libros[i].autor);
+  libroElem.appendChild(libroDesc);
+  if (libros[i].alreadyRead) {
+    libroElem.style.color = 'grey';
+  }
+  libroList.appendChild(libroElem);
+}
+document.body.appendChild(libroList);
+s
+  </script>
+</body>
+</html>

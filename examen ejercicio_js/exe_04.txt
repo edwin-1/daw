@@ -1,0 +1,41 @@
+primer ejecicio
+
+1.¿Qué evento usaste para poder ejecutar la actualización de tus datos?
+
+document.getElementById y innerHTML
+
+2.¿Qué código se encarga de agregar los elementos en la lista?
+
+<button onclick="agregar()">nombre</button>
+	<button onclick="agregar2()">pasatiempos</button>
+	<button onclick="agregar3()">ciudad</button>
+
+3.¿Qué debería realizar si deseo eliminar los elementos de la lista al realizar un click al listado?
+
+nada porque no hay ningun boton que lo elimine
+
+
+segundo ejercicio 
+
+1.¿Qué código utilizas para crear una imagen nueva?
+
+
+
+
+1.
+
+var libroImg = document.createElement('img');
+
+2.¿Qué código se encarga de agregar todos los elementos al body?
+
+
+
+
+
+
+document.body.appendChild(libroList);
+
+3.Identifica el arreglo en el código y escríbelo como si fuera una tabla una base de datos (Filas y Columnas).
+
+var libroList = document.createElement('ul');
+for (var i = 0; i <libros.length; i ++) {
