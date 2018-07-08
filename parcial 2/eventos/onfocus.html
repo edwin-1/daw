@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onFocus</title>
+</head>
+<script type="text/javascript">
+	function efecto(Id){
+		var elem = document.getElementById(id).parentElement;
+		elem.setAttribute("class", "efect campo");
+	}
+</script>
+<style type="text/css">
+	.campo{
+		border: 1px solid #fff;
+		padding: 5px 10px;
+		-o-transition:color 2.s ease-out, background 1s ease-in;
+		-ms-transition:color 2.s ease-out, background 1s ease-in;
+		-moz-transition:color 2.s ease-out, background 1s ease-in;
+		-webkit-transition:color 2.s ease-out, background 1s ease-in;
+		transition: color .2s ease-out, background 1s ease-in;
+	}
+	.effect{
+		color: red; background: yellow; border-color: cadetblue; border-style: dashed;
+	}
+	.effect label{
+		font-weight: bold;
+	}
+</style>
+<body>
+	<form name="form1">
+		<h2>por favor introduzca la siguiente informacion:</h2>
+		<br>
+		<div class="campo">
+			<label for="txtname">Nombre:</label>
+			<input type="text" name="txtName" id="txt_1" onfocus="efecto(this.id)">
+		</div>
+		<div class="campo">
+			<label for="txtname">Nombre:</label>
+			
+		</div>
+	</form>
+</body>
+</html>
