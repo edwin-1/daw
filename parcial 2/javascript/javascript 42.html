@@ -1,0 +1,61 @@
+<!DOCTYPE html public "-//w3c//dtd xhtml 1.0 transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<title>javascript 42</title>
+</head>
+<script type="text/javascript">
+	function iniciar(){
+		var labels=document.getElementsByClassName("label");
+		for(x=0; x<labels.length; x++){
+			labels[x].style.color="blue";
+		}
+		var negritas= document.getElementsByTagName("strong");
+		for(x=0; x<negritas.length; x++){
+			negritas[x].style.textTransform="upperCase";
+		}
+		document.getElementsById("apellido").style.fontStyle="italic";
+		document.querySelectorAll("#apellido b")[0].style.fontStyle="normal";
+
+	    var tds = document.getElementsByTagName("td");
+	    for (x=0; x<tds.length; x++){
+	    	var texto = document.createdTextNode(x+1);
+	    	tds[x].appendChild(texto);
+	    }	 
+	}
+</script>
+<style type="text/css">
+	#tabla{
+		width: 300px;
+		border-spacing:0;
+		border: 1px solid #ccc;
+	}
+	#tabla td{
+		width: 100px;
+		height: 
+	}
+</style>
+<body onload="iniciar();">
+	<p>esta pagina es <strong>muy sencilla</strong></p>
+	<p id="nombre" class="label"><strong>nombre</strong>edwin</p>
+    <p id="apellido" class="label"><b>apellido</b> tzuc</p>
+    <table id="tabla">
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    </tr>
+
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    </tr>
+    <tr>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    </tr>
+    </table>
+</body>
+</html>
