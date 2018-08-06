@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<meta name="description" content="Bootstrap">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Edwin Tzuc Poot">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Estilos en Css -->
+    <style>
+      .slider{
+        background: url("images/bg-3.png");
+        background-size: cover;
+        background-position: center; 
+        height: 400px;
+      }
+    </style>
+</head>
+<body>
+
+	<!--menu de navegacion-->
+	<div class="container-fluid bg-inverse fixes-top">
+		 <div class="container-fluid bg-inverse fixed-top">
+      <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse container">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+
+             </a>   
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto text-center">
+              <a class="nav-item nav-link active" href="#">Inicio</a>
+              <a class="nav-item nav-link" href="#">Html</a>
+              <a class="nav-item nav-link" href="#">Css</a>
+              <a class="nav-item nav-link mr-md-4" href="#">Javascript</a>
+              <div><a class="btn btn-danger" href="https://www.youtube.com/bluuweb">Contacto</a></div>
+            </div>
+          </div>
+      </nav>
+    </div>
+		<!--fin de menu de navegacion-->
+		<!--seccion slider-->
+		<div class="container-fluid slider text-white d-flex flex-column justify-content-center aling-items-center">
+			<div class="text-center">
+				<h3 class="hidden-xs-down">¿quiere aprender hoy?</h3>
+				<h1 class="display-4">noticias por correo</h1>
+				<p class="lead hidden-xs-down">100 cursos gratis aqui</p>
+			</div>
+			<form action="" class="form-inline fllex-column flex-sm-row">
+				<div class="form-group mr-3">
+					<input type="text" placeholder="escribe tu correo" class="form-control">
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-danger" value="enviar">
+				</div>
+			</form>
+		</div>
+		<!--fin seccion slider-->
+		 <main role="main" class="container">
+        <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+        <form action="calcular.php" method="get" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="exampleInputA1">Primer valor</label>
+            <input type="number" name="a" class="form-control" id="exampleInputA1" aria-describedby="AHelp" placeholder="Proporcione primer valor">
+            <small id="AHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputB1">Segundo Valor</label>
+            <input type="number" name="b" class="form-control" id="exampleInputB1" placeholder="Proporcione segundo valor">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+           <a href="#" id="calcular" class="btn btn-danger">Calcular</a>    
+        </form>
+    </main>
+		<!--footer-->
+		<div class="container-fluid bg-inverse text-white py-3">
+			<div class="container text-center">
+				<p>Edwin Tzuc Poot</p>
+			</div>
+		</div>
+		<!--fin de footer-->
+		   <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function){
+    		$('#calcular').click(function(){
+    			alert($(#form1).serialize());
+    			$.ajax({
+    				url:"calcular.php",
+    				method:"get",
+    				data:$("#form1").serialize(),
+    				success:function(result){
+    					alert(result);
+    				}
+    			});
+    		});
+    	});
+    	
+    </script>
+
+</body>
+</html>
